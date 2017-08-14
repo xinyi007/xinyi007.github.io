@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-08-14T19:12:36.000Z</updated>
+  <updated>2017-08-14T19:29:32.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,16 +16,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2</title>
-    <link href="http://yoursite.com/2017/08/15/2/"/>
-    <id>http://yoursite.com/2017/08/15/2/</id>
-    <published>2017-08-14T19:12:36.000Z</published>
-    <updated>2017-08-14T19:12:36.000Z</updated>
+    <title>基于阿里云OSS的富文本编辑器</title>
+    <link href="http://yoursite.com/2017/08/11/2/"/>
+    <id>http://yoursite.com/2017/08/11/2/</id>
+    <published>2017-08-10T17:23:12.000Z</published>
+    <updated>2017-08-14T19:29:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="kindeditor-oss"><a href="#kindeditor-oss" class="headerlink" title="kindeditor-oss"></a>kindeditor-oss</h2><p>基于阿里云OSS的PHP富文本编辑器</p>
+<p>编辑器是基于KindEditor 4.1.10 版本进行改进的</p>
+<p>主要修改文件： php/upload_json.php 文件</p>
+<p>为兼容PHP7，修改了部分 php/JSON.php 文件</p>
+<p>demo.php 是演示文件，仅做测试使用！</p>
+<p>file_manager_json.php 是图片中心，地址调用了OSS地址，但本地路径还是调用tmp目录</p>
+<p>要达到100%可以参考将OSS挂载本地磁盘，然后进行同步！</p>
+<p>具体参考：<a href="http://bbs.aliyun.com/read/241320.html?spm=5176.bbsl211.0.0.2nsAZu" target="_blank" rel="external">阿里云OSS插件</a></p>
+<h2 id="文件修改"><a href="#文件修改" class="headerlink" title="文件修改"></a>文件修改</h2><p>其他方面暂无其他的修改，upload_json.php主要该几个方面：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">const OSS_ACCESS_ID = <span class="string">'您从OSS获得的AccessKeyId'</span>;</div><div class="line">const OSS_ACCESS_KEY = <span class="string">'您从OSS获得的AccessKeySecret'</span>;</div><div class="line">const OSS_ENDPOINT = <span class="string">'OSS的域名，如 oss-cn-hangzhou.aliyuncs.com'</span>;</div><div class="line"><span class="variable">$bucket</span>= <span class="string">"您在OSS上的Bucket"</span>;</div><div class="line"><span class="variable">$urls</span> = <span class="string">'您访问OSS的地址'</span>;</div></pre></td></tr></table></figure></p>
+<p>Github项目地址<a href="https://github.com/xinyi007/kindeditor-oss" target="_blank" rel="external">kindeditor-oss</a></p>
+]]></content>
     
     <summary type="html">
     
+      &lt;h2 id=&quot;kindeditor-oss&quot;&gt;&lt;a href=&quot;#kindeditor-oss&quot; class=&quot;headerlink&quot; title=&quot;kindeditor-oss&quot;&gt;&lt;/a&gt;kindeditor-oss&lt;/h2&gt;&lt;p&gt;基于阿里云OSS的PHP富文本编辑器&lt;/p&gt;
+    
     </summary>
     
+      <category term="PHP开发" scheme="http://yoursite.com/categories/PHP%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="PHO" scheme="http://yoursite.com/tags/PHO/"/>
     
   </entry>
   
